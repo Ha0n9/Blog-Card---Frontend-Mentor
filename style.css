@@ -1,0 +1,121 @@
+/* Custom variables */
+:root {
+    --background-color: hsl(47, 88%, 63%);
+    --white-color: hsl(0, 0%, 100%);
+    --gray500-color: hsl(0, 0%, 42%);
+    --gray950-color: hsl(0, 0%, 7%);
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+/* Card */
+.card {
+    width: 384px;
+    height: auto;
+    border-radius: 20px;
+    background-color: var(--white-color);
+    transform: translate(-8px, -8px);
+    box-shadow: 8px 8px 0px 0px var(--gray950-color);
+    transition: all .25s;
+}
+
+.card:active {
+    box-shadow: 0px 0px 0px 0px var(--white-color);
+    transform: translate(0, 0);
+}
+
+.card__container {
+    margin: 24px;
+}
+
+.card__container>* {
+    margin-bottom: 24px;
+}
+
+.img__container {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Card content */
+.card__content {}
+
+.card__content>* {
+    margin-bottom: 12px;
+}
+
+.card__content--category {
+    padding: 4px 12px;
+    background-color: var(--background-color);
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.card__content--published {
+    font-size: 14px;
+    color: var(--gray950-color);
+}
+
+.card__content--title {
+    font-size: 24px;
+    color: var(--gray950-color);
+    transition: color .4s;
+}
+
+.card__content--title:hover,
+.card__content--title:focus,
+.card__content--title:active {
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+.card__content--desc {
+    font-size: 16px;
+    color: var(--gray500-color);
+}
+
+/* Author */
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author__img {
+    height: 32px;
+    width: 32px;
+}
+
+.author__name {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/* - Mobile: 375px */
+/* - Desktop: 1440px */
