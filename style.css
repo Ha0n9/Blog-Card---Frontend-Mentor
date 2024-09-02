@@ -32,6 +32,7 @@ body {
     width: 384px;
     height: auto;
     border-radius: 20px;
+    border: 1px solid var(--gray950-color);
     background-color: var(--white-color);
     transform: translate(-8px, -8px);
     box-shadow: 8px 8px 0px 0px var(--gray950-color);
@@ -69,6 +70,7 @@ body {
 
 .card__content>* {
     margin-bottom: 12px;
+    line-height: 1.5;
 }
 
 .card__content--category {
